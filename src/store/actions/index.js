@@ -7,12 +7,13 @@ export const FILTER_SEASON_ACTIVITY = 'FILTER_SEASON_ACTIVITY';
 export const FETCH_COUNTRY_DETAIL = 'FETCH_COUNTRY_DETAIL';
 export const RESET = 'RESET';
 export const POST_ACTIVITY = 'POST_ACTIVITY';
+const BACK_URL = 'https://back-pi-countries.herokuapp.com/api/'
 
 
 export  function fetchCountries() {
     return async function(dispatch) {
         try {
-            let countries = await axios.get('http://localhost:3001/api/countries/')
+            let countries = await axios.get(`${BACK_URL}countries`)
             dispatch({
                 type: FETCH_COUNTRIES,
                 payload: countries.data   
@@ -27,7 +28,8 @@ export  function fetchCountries() {
 export function searchCountry(name) {
     return async function(dispatch) {
         try {
-            let countries = await axios.get('http://localhost:3001/api/countries?name=' + name)
+            
+            let countries = await axios.get(`${BACK_URL}countries?name=${name}`)
             dispatch({
                 type: SEARCH_COUNTRY,
                 payload: countries.data   
@@ -41,7 +43,7 @@ export function searchCountry(name) {
 export  function fetchCountryDetail(id) {
     return async function(dispatch) {
         try {
-            let countries = await axios.get('http://localhost:3001/api/countries/' + id)
+            let countries = await axios.get(`${BACK_URL}countries/${id}`)
             dispatch({
                 type: FETCH_COUNTRY_DETAIL,
                 payload: countries.data   
@@ -77,7 +79,7 @@ export function filterCountriesActivities(filter) {
 
 export function postActivity(activity) {
     return async function(dispatch) {
-        const response = await axios.post('http://localhost:3001/api/activity/',activity);
+        const response = await axios.post(`${BACK_URL}activity`,activity);
         try {
         dispatch({
             type: POST_ACTIVITY,
