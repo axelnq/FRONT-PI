@@ -216,7 +216,8 @@ export default function CreateActivity() {
                 {disabled ? null : <input className={styles.inputForm} type="submit" value="CREATE"/>}
                 
             </form>
-            <ul className={styles.listForm}>{activity.countriesArray && activity.   countriesArray.map((country,index) => {
+            <ul className={styles.listForm}>{activity.countriesArray && 
+            activity.countriesArray.map((country,index) => {
                        let countryFind = countries.find(c => c.id === country);
                       
                     return <li className={styles.listImage} key={index}>
