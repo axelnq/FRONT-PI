@@ -1,0 +1,6 @@
+export const ASCENDING = 'ASCENDING';
+export const DESCENDING  = 'DESCENDING';
+export const ALPHABETIC = 'ALPHABETIC';
+export const POPULATION  = 'POPULATION';
+export const CONTINENT  = 'CONTINENT';
+export const TOURIST_ACTIVITY  = 'TOURIST_ACTIVITY';

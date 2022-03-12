@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+/*
+background: url('https://fondosmil.com/fondo/38916.png'); la mimsa que landingBackground
+*/
+.landing {
+  background-image: url('../images/landingBackground.png');
+  
+  height: 100vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landingButton {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 16px 14px 20px #0000008c;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Roboto', sans-serif;
+  width: 400px;
+  height: 200px;
+  justify-content: center;
+  line-height: 1;
+  /*list-style: none;*/
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 45px;
+  border-radius: 10px;
+  margin: 250px auto;
+}
+
+/*
+.landingButton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+*/
+
+.landingButton:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  background-image: radial-gradient(100% 100% at 100% 0, #f1f1f1 0, #263ad6 100%);
+  transform: translateY(-2px);
+}
+/*
+.landingButton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+*/
+.landingButton::before{
+    content: "";
+    background-image: conic-gradient(
+        #fff 150deg,
+        transparent 20deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+.landingButton::after{
+    content: "Access";
+    width: 390px;
+    height: 190px;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: larger;
+    letter-spacing: 6px;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    
+    50%{
+        transform: rotate(-180deg);
+    }
+
+  
+    100%{
+        transform: rotate(-360deg);
+    }
+}

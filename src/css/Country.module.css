@@ -1,0 +1,41 @@
+.countryCard {
+    border: 1px solid #57A;
+    width:300px;
+    height:360px;
+    margin-top:20px;
+    border-radius: 52px;
+  
+ 
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(21, 21, 95) 26%, rgba(25,140,212,1) 110%);
+  
+}
+
+.countryCard:hover {
+    border: 5px double #206fa3;
+   
+}
+
+.countryCard a {
+    text-decoration: none;
+}
+.countryInfo {
+   height:82px;
+}
+
+.countryCard h2 {
+    color:white;
+    margin:0 2px;
+    line-height: 1;
+}
+.countryCard h3 {
+    color:white;
+    line-height: 0.4;
+}
+
+.countryCard img {
+    width:100%;
+    height:76%;
+    object-fit: cover;
+    border-radius: 50px 50px 0 0;
+}

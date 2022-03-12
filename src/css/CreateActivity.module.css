@@ -1,0 +1,220 @@
+
+div {
+    color: #fff;
+}
+
+span.danger {
+    color: red;
+    font-size: 15px;
+    display: block;
+  }
+  
+input.danger {
+    border: 2px solid red;
+    display: block;
+}
+
+div.danger {
+    border: 2px solid red;
+    display: block;
+}
+ul.danger {
+    border: 2px solid red;
+    display: block;
+}
+.formActivity{
+	max-width: 500px;
+	padding: 10px 20px;
+	margin: 10px auto;
+	padding: 20px;
+	/*background: #f4f5f8;*/
+    /*background: #3a498b;*/
+    background-color: #427c6d;
+    
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.formActivity label {
+	display: block;
+	margin-bottom: 8px;
+    /*color:#000;*/
+    color:#fff;
+    
+}
+
+.difficultyField input {
+    width: 90%;
+    
+}
+.spanDiff {
+    color:#fff;
+    font-size:30px;
+}
+
+.formActivity input[type="text"],
+.formActivity textarea,
+.formActivity select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	/*background-color: #e8eeef;*/
+    background-color: #519584;
+    /*background-color: #515197;*/
+	/*color:#8a97a0;*/
+    color:#fff;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 15px;
+    border:1px solid rgb(255, 255, 255);
+}
+
+
+.formActivity input[type="submit"]
+
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: rgb(36, 28, 58);
+    background-color: #33806c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid rgb(246, 247, 248);
+	border-width: 1px 1px 1px;
+	margin-bottom: 10px;
+}
+.formActivity input[type="submit"]:hover
+{
+	background: rgb(36, 28, 58);
+}
+.seasonField {
+    display:flex;
+    justify-content:space-between;
+    border:1px dotted rgb(255, 255, 255);
+    padding:5px;
+    margin-bottom:15px;
+}
+.formActivity ::placeholder {
+    color:#fff;
+}
+.homeButton {
+    margin: 0 auto;
+    display: flex;
+    height: 3em;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    font-size:20px;
+    border:1px solid #fff;
+    background-color:rgb(43, 144, 136);
+    color:#000;
+   }
+   
+   .homeButton > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   
+   }
+    
+   .homeButton:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+    
+   }
+   
+   .homeButton:hover {
+    color:#fff;
+    transform: translateY(-2px);
+   }
+
+/*
+
+.formActivity {
+    background-color:rgba(80, 88, 131, 0.75);
+    width:550px;
+    height: 350px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin: 10px auto;
+    border: 1px solid #fff;
+}
+
+.nameField, .difficultyField, .durationField, .seasonField {
+    display: flex;
+    height:45px;
+    border: 1px solid #fff;
+    align-items:center;
+    justify-content:center;<
+}
+.nameField label, .difficultyField label, .durationField label, .seasonField label {
+    margin:5px;
+    
+}
+
+.nameField input,.difficultyField input, .durationField input {
+    width: 60%;
+}
+
+
+*/
+
+
+.listForm {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:50px;
+    list-style: none;
+}
+.listImage {
+    width:350px;
+    height:280px;
+    border:1px solid #fff;
+}
+
+.listImage div {
+    display: flex;
+    justify-content: space-between;
+}
+.listImage button {
+    width:50px;
+    height:45px;
+    align-self: flex-end;
+    background-color: #cf3d3d;
+    color:#fff;
+    border:none;
+}
+
+.listImage h3 {
+    margin:0 auto;
+    align-self: center;
+}
+
+.listImage img {
+    width:100%;
+    height:233px;
+    object-fit: cover;
+   
+}

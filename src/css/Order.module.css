@@ -1,0 +1,32 @@
+.orderContainer {
+    display:flex;
+    height:50px;
+}
+
+.orderContainer select, .orderContainer button {
+    border-radius:10px;
+    margin:1px;
+    width:100px;
+    text-align:center;
+    border:1px solid #fff;
+    background-color:rgb(43, 144, 136);
+    color:#fff;
+    font-weight: bold;
+}
+
+.orderContainer button:disabled {
+    background-color:rgb(25, 70, 66);
+    cursor:auto;
+}
+
+.orderContainer button:disabled:hover {
+    border:1px solid #fff;
+}
+
+.orderContainer button {
+    cursor:pointer;
+}
+
+.orderContainer button:hover {
+    border: 2px solid #fff;
+}
